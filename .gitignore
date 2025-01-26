@@ -1,0 +1,40 @@
+# Ignore the entire .idea folder
+.idea/
+
+.Backend/Server/target
+
+
+
+.Backend/Server/HELP.md
+.Backend/Server/target/
+.Backend/Server/!.mvn/wrapper/maven-wrapper.jar
+.Backend/Server/!**/src/main/**/target/
+.Backend/Server/!**/src/test/**/target/
+
+### STS ###
+.Backend/Server/.apt_generated
+.Backend/Server/.classpath
+.Backend/Server/.factorypath
+.Backend/Server/.project
+.Backend/Server/.settings
+.Backend/Server/.springBeans
+.Backend/Server/.sts4-cache
+
+### IntelliJ IDEA ###
+.Backend/Server/.idea
+.Backend/Server/*.iws
+.Backend/Server/*.iml
+.Backend/Server/*.ipr
+
+### NetBeans ###
+.Backend/Server//nbproject/private/
+.Backend/Server//nbbuild/
+.Backend/Server//dist/
+.Backend/Server//nbdist/
+.Backend/Server//.nb-gradle/
+.Backend/Server/build/
+.Backend/Server/!**/src/main/**/build/
+.Backend/Server/!**/src/test/**/build/
+
+### VS Code ###
+.Backend/Server/.vscode/
