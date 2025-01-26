@@ -1,0 +1,305 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1f1f1f;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  position: relative;
+
+  .hero-content {
+    max-width: 600px;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+
+      .highlight {
+        color: #24c1a7;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #cccccc;
+    }
+
+    .search-bar {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+
+      .stock-search-input {
+        margin-top: 20px;
+        width: 100%;
+        padding: 1rem 1rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 16px;          /* Increased border radius for a modern look */
+        background-color: #f0f0f03b;    /* Light grey background */
+        color: #333333;               /* Dark text for contrast */
+
+        &:focus {
+          outline: none;             /* Remove default focus outline */
+          background-color: #e8e8e8; 
+        }
+      }
+    }
+  }
+}
+
+.stock-search-input {
+  &::placeholder {
+    color: #ffffff; // default placeholder color
+  }
+
+  &:focus::placeholder {
+    color: #333333;               /* Dark text for contrast */
+  }
+}
+
+.features {
+  padding: 2rem 1rem;
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+
+    .feature-card {
+      background-color: #2a2a2a;
+      border-radius: 6px;
+      padding: 1.5rem;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #343434;
+      }
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+
+        &.teal    { background-color: #24c1a7; }
+        &.green   { background-color: #95eaa5; }
+        &.yellow  { background-color: #fdee9f; }
+        &.purple  { background-color: #c9a8ff; }
+        &.blue    { background-color: #a1cfff; }
+        &.orange  { background-color: #ffb16c; }
+        &.pink    { background-color: #ffb6dd; }
+        &.gray    { background-color: #cfcfcf; }
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        color: #cccccc;
+      }
+
+      &.coming-soon {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.section-divider {
+  width: 90%;          // or 100%, depending on layout
+  border: none;        // remove default <hr> styling
+  height: 1px;         // thin line
+  background-color: #3a3a3a; // pick a dark gray
+}
+
+
+.trending-section {
+  padding: 2rem 1rem;
+
+  // Layout for heading + discover link
+  .trending-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-top: 0px;
+
+    h2 {
+      font-size: 2.1rem;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .discover-link {
+      color: #ffffff;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+
+      &:hover {
+        color: #a3a3a3;
+      }
+    }
+  }
+
+  // Cards container
+  .trending-cards {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;        // space between cards
+
+    flex-wrap: wrap;  // ensures responsive wrap if needed
+
+    .stock-card {
+      display: flex;
+      align-items: center;
+      background-color: #0f2943;   // darker card background
+      border: 1px solid #2b3b4f;   // subtle border
+      border-radius: 12px;
+      padding: 2rem 3rem;
+      min-width: 180px;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #1a3350;
+      }
+
+      .icon-container {
+        width: 48px;
+        height: 48px;
+        margin-right: 1rem;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 50%; // If you want a circular icon
+          display: block;
+        }
+      }
+
+      .card-text {
+        h3 {
+          font-size: 1.2rem;
+          color: #ffffff;
+          margin: 0;
+        }
+
+        p {
+          margin: 0;
+          font-size: 1.1rem;
+          color: #cccccc;
+        }
+      }
+    }
+  }
+  .discover-more-container {
+    text-align: center; 
+    margin-top: 2rem;   // space above the button
+    margin-bottom: 2.5rem;
+  }
+
+  .discover-button {
+    margin-top: 20px;
+    background-color: #24c1a792; 
+    color: #ffffff;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 8px; 
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-family: 'Roboto', sans-serif; // if you're using Roboto
+
+    &:hover {
+      background-color: #1aa093;
+    }
+  }
+}
+
+
+.how-it-works {
+  padding: 0.8rem 7rem;
+
+  .how-it-works-title {
+    text-align: center;
+    font-size: 2.1rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+
+  /* We'll handle 1 or 2 columns with media queries. */
+  .how-it-works-content {
+    display: grid;
+    grid-template-columns: 1fr;  // 1 column by default
+    gap: 2rem;                  // space between cards
+
+    /* Once we hit a certain screen size (e.g., 768px), switch to 2 columns */
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .how-card {
+      display: flex;
+      align-items: center;
+      background-color: #25436285;
+      border: 1px solid #2b3b4f;
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #1a3350;
+      }
+
+      .how-text {
+        flex: 1;
+        margin-right: 1.5rem;
+
+        h3 {
+          font-size: 1.2rem;
+          color: #ffffff;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #cccccc;
+        }
+      }
+
+      .how-image {
+        width: 120px;
+        max-width: 35%;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          display: block;
+        }
+      }
+    }
+  }
+  
+}
+
+
+
