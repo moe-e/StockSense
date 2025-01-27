@@ -1,0 +1,79 @@
+.trending-cards {
+  margin-top: 50px;
+  display: grid;
+  /* 3 columns on large screens */
+  grid-template-columns: repeat(3, 1fr);
+  /* vertical gap = 2rem, horizontal gap = 5rem (adjust as desired) */
+  gap: 2rem 5rem;
+
+  /* Center the container and limit max width so it's not too wide */
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;         /* or 70%, adjust for how narrow you want it */
+  max-width: 1200px;  /* so it doesn’t stretch beyond 1200px */
+
+  /* Breakpoints: reduce columns on smaller screens */
+  @media (max-width: 1192px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+  .trending-cards .stock-card {
+    animation: none !important;
+    transition: none !important;
+    cursor: pointer !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    transform-origin: center center;
+
+
+  &:hover {
+    transform: scale(1.045);
+
+    box-shadow: 10 29px 42px rgba(0, 0, 0, 0.2) !important;
+  }
+  }
+
+.title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; // if you're using Roboto
+    margin-bottom: 30px;
+}
+  
+
+.search-bar {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .stock-search-input {
+      margin-top: 20px;
+      width: 100%;
+      padding: 1rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 16px;          /* Increased border radius for a modern look */
+      background-color: #f0f0f03b;    /* Light grey background */
+      color: #333333;               /* Dark text for contrast */
+
+      &:focus {
+        outline: none;             /* Remove default focus outline */
+        background-color: #e8e8e8; 
+      }
+    }
+  }
+  
+  .coming-soon {
+    margin-top: 12rem;
+    text-align: center;
+    font-weight: 500;
+    color: #bfbcbcc0;
+    font-size: 2rem;
+  }

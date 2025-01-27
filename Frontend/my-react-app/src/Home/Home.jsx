@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../Header/Header'; // Adjust path if needed
 import './Home.scss';
+import StockCard from '../StockCard/StockCard.jsx';
+
 
 const Home = () => {
   return (
@@ -47,41 +49,25 @@ const Home = () => {
 
 
     <div className="trending-cards">
-      {/* Card 1: Apple */}
-      <div className="stock-card">
-        <div className="icon-container">
-          {/* Replace with an actual image/icon for Apple */}
-          <img src="/path/to/apple-icon.png" alt="Apple Logo" />
-        </div>
-        <div className="card-text">
-          <h3>AAPL</h3>
-          <p>Apple Inc.</p>
-        </div>
-      </div>
+      
+      <StockCard
+        symbol="AAPL"
+        companyName="Apple Inc."
+        iconPath="../../apple.png"
+      />
 
-      {/* Card 2: Tesla */}
-      <div className="stock-card">
-        <div className="icon-container">
-          {/* Replace with an actual image/icon for Tesla */}
-          <img src="/path/to/tesla-icon.png" alt="Tesla Logo" />
-        </div>
-        <div className="card-text">
-          <h3>TSLA</h3>
-          <p>Tesla, Inc.</p>
-        </div>
-      </div>
+      <StockCard
+        symbol="NVDA"
+        companyName="Nvidia Corp."
+        iconPath="../../nvidia.png"
+      />
 
-      {/* Card 3: Google */}
-      <div className="stock-card">
-        <div className="icon-container">
-          {/* Replace with an actual image/icon for Google */}
-          <img src="/path/to/google-icon.png" alt="Google Logo" />
-        </div>
-        <div className="card-text">
-          <h3>GOOG</h3>
-          <p>Alphabet Inc.</p>
-        </div>
-      </div>
+
+      <StockCard
+        symbol="GOOG"
+        companyName="Alphabet Inc."
+        iconPath="../../google.png"
+      />
 
     
   </div>
@@ -110,7 +96,7 @@ const Home = () => {
       </div>
       <div className="how-image">
         {/* Replace with an actual image path */}
-        <img src="/path/to/documents.png" alt="Documents" />
+        <img src="../../documents.png" alt="Documents" />
       </div>
     </div>
 
@@ -124,7 +110,7 @@ const Home = () => {
         </p>
       </div>
       <div className="how-image">
-        <img src="/path/to/nlp.png" alt="NLP Extraction" />
+      <img src="../../typing.png" alt="Documents" />
       </div>
     </div>
 
@@ -138,7 +124,7 @@ const Home = () => {
         </p>
       </div>
       <div className="how-image">
-        <img src="/path/to/prompt.png" alt="Prompt Augmentation" />
+      <img src="../../augment.png" alt="Documents" />
       </div>
     </div>
 
@@ -152,7 +138,7 @@ const Home = () => {
         </p>
       </div>
       <div className="how-image">
-        <img src="/path/to/llm.png" alt="LLM Output" />
+      <img src="../../llm.png" alt="Documents" />
       </div>
     </div>
   </div>

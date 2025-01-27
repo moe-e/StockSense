@@ -1,0 +1,49 @@
+.stock-card {
+    display: flex;
+    align-items: center;
+    background-color: #0f2943;   // darker card background
+    border: 1px solid #2b3b4f;   // subtle border
+    border-radius: 12px;
+    padding: 2rem 3rem;
+    min-width: 180px;
+    transition: background-color 0.2s ease;
+    animation: bounce 2s infinite; /* Add animation */
+    animation-timing-function: ease-in-out;
+
+    &:hover {
+      background-color: #1a3350;
+    }
+
+    .icon-container {
+      width: 48px;
+      height: 48px;
+      margin-right: 1rem;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%; // If you want a circular icon
+        display: block;
+      }
+    }
+
+    .card-text {
+      h3 {
+        font-size: 1.2rem;
+        color: #ffffff;
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+        font-size: 1.1rem;
+        color: #cccccc;
+      }
+    }
+  }
+  
+  .large-image {
+    width: 155% !important;
+    margin-left: -30px;
+    margin-top: -13px;
+  }
