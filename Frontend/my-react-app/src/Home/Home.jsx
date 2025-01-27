@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header/Header'; // Adjust path if needed
 import './Home.scss';
 import StockCard from '../StockCard/StockCard.jsx';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -38,8 +39,6 @@ const Home = () => {
 {/* Divider line */}
 <hr className="section-divider" />
 
-
-
   <section className="trending-section">
 
   <div className="trending-header">
@@ -73,7 +72,9 @@ const Home = () => {
   </div>
 
   <div className="discover-more-container">
-        <button className="discover-button">Discover More →</button>
+    <Link to="/explore" style={{textDecoration: 'none'}}>
+      <button className="discover-button">Discover More →</button>
+    </Link>
   </div>
 
 </section>

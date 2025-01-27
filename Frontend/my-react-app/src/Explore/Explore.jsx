@@ -43,41 +43,40 @@ const Explore = () => {
       />
 
         <StockCard
-        symbol="AAPL"
-        companyName="Apple Inc."
-        iconPath="../../apple.png"
+        symbol="NFLX"
+        companyName="Netflix Inc."
+        iconPath="../../netflix.png"
       />
 
       <StockCard
-        symbol="NVDA"
-        companyName="Nvidia Corp."
-        iconPath="../../nvidia.png"
-      />
-
-
-      <StockCard
-        symbol="GOOG"
-        companyName="Alphabet Inc."
-        iconPath="../../google.png"
+        symbol="AMZN"
+        companyName="Amazon Inc."
+        iconPath="../../amazon.png"
       />
 
     <StockCard
-        symbol="AAPL"
-        companyName="Apple Inc."
-        iconPath="../../apple.png"
-      />
-
-      <StockCard
-        symbol="NVDA"
-        companyName="Nvidia Corp."
-        iconPath="../../nvidia.png"
+        symbol="SNAP"
+        companyName="Snap Inc."
+        iconPath="../../snap.png"
       />
 
 
+    <StockCard
+        symbol="AMD"
+        companyName="Advanced Micro Devices Inc."
+        iconPath="../../amd.png"
+      />
+
+    <StockCard
+        symbol="MSFT"
+        companyName="Microsoft Corp."
+        iconPath="../../microsoft.png"
+      />
+
       <StockCard
-        symbol="GOOG"
-        companyName="Alphabet Inc."
-        iconPath="../../google.png"
+        symbol="UBER"
+        companyName="Uber Technologies Inc."
+        iconPath="../../uber.png"
       />
 
     
